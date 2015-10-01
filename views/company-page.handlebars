@@ -1,0 +1,29 @@
+<div class="container">
+    <div class="container">
+        <div class="page-header">
+            <h1>{{curcompany.companyName}}</h1>
+        </div>
+        <img src="{{curcompany.img}}" class="page-avatar">
+        <h4>City: {{curcompany.city}}</h4>
+        <h4>About Us: {{{curcompany.about}}}</h4>
+        <h4>Contacts: {{curcompany.contacts}}</h4>
+
+        <div class="page-subscribe">
+            {{#if user}}
+                {{#isSubscribe curcompany user}}
+                {{/isSubscribe}}
+            {{/if}}
+        </div>
+
+    </div>
+
+    {{#each post}}
+        <a href="/post-details?id={{this._id}}" class="list-group-item">
+            <h4 class="list-group-item-heading">{{this.title}}</h4>
+            <h6>City: {{this.place}}</h6>
+            <p class="list-group-item-text">{{{this.text}}}</p>
+            <h6>Created by: {{this.companyName}}</h6></a>
+    {{/each}}
+</div>
+
+<script src="/javascripts/subscribe.js"></script>

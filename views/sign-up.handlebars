@@ -1,0 +1,167 @@
+<div class="container">
+    <div class="page-header">
+        <h1>Sign up</h1>
+    </div>
+</div>
+
+<form class="form-horizontal login-form" name="login-form" method="POST" enctype="multipart/form-data" action="/sign-up">
+    <div class="form-group">
+        <label for="input-username" class="col-lg-2 control-label">Login</label>
+
+        <div class="col-lg-5">
+            <input name="username" type="text" value="" class="form-control" id="input-username" placeholder="Add Login">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="input-password" class="col-lg-2 control-label">Password</label>
+
+        <div class="col-lg-5">
+            <input name="password" type="password" value="" class="form-control" id="input-password" placeholder="Add Password">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="input-confirm" class="col-lg-2 control-label">Confirm Password</label>
+
+        <div class="col-lg-5">
+            <input name="confirm" type="password" value="" class="form-control" id="input-password" placeholder="Add Confirm Password">
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="page-header">
+            <h2>User Info</h2>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="input-img" class="col-lg-2 control-label">Photo</label>
+
+        <div class="col-lg-5">
+            <input name="img" type="file" id="img" multiple="multiple" id="input-photo">
+            <img src="" id="img-pic">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="input-city" class="col-lg-2 control-label">Firts Name</label>
+
+        <div class="col-lg-5">
+            <input name="firstname" type="text" value="" class="form-control" id="input-firtsname" placeholder="Add Firts Name">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="input-secondname" class="col-lg-2 control-label">Second Name</label>
+
+        <div class="col-lg-5">
+            <input name="secondname" type="text" value="" class="form-control" id="input-secondname" placeholder="Add Second Name">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="input-mail" class="col-lg-2 control-label">E-mail</label>
+
+        <div class="col-lg-5">
+            <input name="mail" type="text" value="" class="form-control" id="input-mail" placeholder="Add E-mail">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="input-dob" class="col-lg-2 control-label">DOB</label>
+
+        <div class="col-lg-5">
+            <input name="dob" type="date" value="" class="form-control" id="input-dob" placeholder="Add DOB">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="input-city" class="col-lg-2 control-label">City</label>
+
+        <div class="col-lg-5">
+            <input name="city" type="text" value="" class="form-control" id="input-city" placeholder="Add City">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="input-university" class="col-lg-2 control-label">University</label>
+
+        <div class="col-lg-5">
+            <input name="university" type="text" value="" class="form-control" id="input-university" placeholder="Add University">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="input-direction" class="col-lg-2 control-label">Direction</label>
+
+        <div class="col-lg-5">
+            <input name="direction" type="text" value="" class="form-control" id="input-direction" placeholder="Add Direction">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="input-course" class="col-lg-2 control-label">Course</label>
+
+        <div class="col-lg-5">
+            <input name="course" type="text" value="" class="form-control" id="input-course" placeholder="Add Course">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="input-specialty" class="col-lg-2 control-label">Specialty</label>
+
+        <div class="col-lg-5">
+            <input name="specialty" type="text" value="" class="form-control" id="input-specialty" placeholder="Add Specialty">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="input-skills" class="col-lg-2 control-label">Skills</label>
+
+        <div class="col-lg-5">
+            <input name="skills" type="text" value="" class="form-control" id="input-skills" placeholder="Add Skills">
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="page-header">
+            <h2>Current Job</h2>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="input-position" class="col-lg-2 control-label">Position</label>
+
+        <div class="col-lg-5">
+            <input name="position" type="text" value="" class="form-control" id="input-position" placeholder="Add Position">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="input-company" class="col-lg-2 control-label">Company</label>
+
+        <div class="col-lg-5">
+            <input name="company" type="text" value="" class="form-control" id="input-company" placeholder="Add Company">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="input-description" class="col-lg-2 control-label">Description</label>
+
+        <div class="col-lg-5">
+            <input name="description" type="text" value="" class="form-control" id="input-description" placeholder="Add Вescription">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="input-start" class="col-lg-2 control-label">Start</label>
+
+        <div class="col-lg-5">
+            <input name="start" type="date" value="" class="form-control" id="input-start" placeholder="Add Start">
+        </div>
+    </div>
+
+
+    <div class="form-group">
+        <div class="col-lg-offset-2 col-lg-10">
+            <button type="submit" class="btn btn-success" data-loading-text="Sending...">Sign up</button>
+        </div>
+    </div>
+</form>
+
+<div class="container">
+    <div class="alert error" role="alert"></div>
+</div>
+
+
+
+<script src="/javascripts/sign-up.js"></script>

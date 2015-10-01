@@ -1,0 +1,23 @@
+{
+  "name": "Job",
+  "version": "0.0.0",
+  "homepage": "https://github.com/JobRGR/Job",
+  "authors": [
+    "A-gambit <a.gambit.gregory@gmail.com>"
+  ],
+  "main": "app.js",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_component",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "3.3.1",
+    "jquery": "*",
+    "socket.io-client": "~1.2.0"
+  }
+}

@@ -1,0 +1,17 @@
+<div class="container">
+    <div class="container">
+        <div class="page-header">
+            <h1>{{curuser.username}}</h1>
+            <h4>{{curuser.specialty}}</h4>
+        </div>
+        <img src="{{curuser.img}}" class="page-avatar">
+        <h3>{{curuser.firtsname}} {{curuser.lastname}}</h3>
+        <h4>City: {{curuser.city}}</h4>
+        <h4>University: {{curuser.university}}</h4>
+        <h4>Direction: {{curuser.direction}}</h4>
+        <h4>Course: {{curuser.course}} </h4>
+        <h4>Skills: {{curuser.skills}}</h4>
+        <a href = "/create-resume?id={{curuser._id}}">get resume</a>
+    </div>
+
+</div>

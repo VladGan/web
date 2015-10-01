@@ -1,0 +1,9 @@
+<div class="container">
+    {{#each post}}
+        <a href="/post-details?id={{this._id}}" class="list-group-item">
+            <h4 class="list-group-item-heading">{{this.title}}</h4>
+            <h6>City: {{this.place}}</h6>
+            <p class="list-group-item-text">{{{this.text}}}</p>
+            <h6>Created by: {{this.companyName}}</h6></a>
+    {{/each}}
+</div>

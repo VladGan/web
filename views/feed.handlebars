@@ -1,0 +1,26 @@
+<div class="container theme-showcase">
+    <div class = "container">
+        {{#list post current}}
+            <div class="container list-group-item" id = "{{this.a._id}}">
+                    <h4 class="list-group-item-heading">{{this.a.title}}
+                        {{#ifCond this.a.postAuthor '===' this.b}}
+                            <a href = "/post-respond?id={{this.a._id}}"><i class = "glyphicon glyphicon-comment pull-right blue icon"></i></a>
+                            <a href = "/post-edit?id={{this.a._id}}"><i class = "glyphicon glyphicon-pencil pull-right yellow icon"></i></a>
+                            <i class = "glyphicon glyphicon-remove pull-right  icon red" id = "delete"></i>
+                        {{/ifCond}}
+                        <a href = "/post-details?id={{this.a._id}}"><i class = "glyphicon glyphicon-chevron-right pull-right green icon"></i></a>
+                    </h4>
+                    <p class="list-group-item-text col-lg-10 post-details">{{{this.a.text}}}</p>
+                    <h6 class="list-group-item-text col-lg-7">
+                        Created by {{this.a.companyName}}
+                    </h6>
+            </div>
+
+        {{/list}}
+    </div>
+</div>
+
+
+<script src="/javascripts/post-moderation.js"></script>
+<script src="/javascripts/feed.js"></script>
+

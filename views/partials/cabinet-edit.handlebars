@@ -1,0 +1,131 @@
+<form class="form-horizontal login-form" name="edit-form">
+    <div class="form-group">
+        <label for="input-img" class="col-lg-2 control-label">Photo</label>
+
+        <div class="col-lg-5">
+            <input name="img" type="file" id="img" multiple="multiple" id="input-photo">
+            <img src="{{user.img}}" id="img-pic">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="input-username" class="col-lg-2 control-label">Login</label>
+
+        <div class="col-lg-5">
+            <input name="username" type="text" value="{{user.username}}" class="form-control" id="input-username" placeholder="Add Login">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="input-firtsname" class="col-lg-2 control-label">Firts Name</label>
+
+        <div class="col-lg-5">
+            <input name="firstname" type="text" value="{{user.firstname}}" class="form-control" id="input-firtsname" placeholder="Add Firts Name">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="input-secondname" class="col-lg-2 control-label">Second Name</label>
+
+        <div class="col-lg-5">
+            <input name="secondname" type="text" value="{{user.secondname}}" class="form-control" id="input-secondname" placeholder="Add Second Name">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="input-mail" class="col-lg-2 control-label">E-mail</label>
+
+        <div class="col-lg-5">
+            <input name="mail" type="text" value="{{user.mail}}" class="form-control" id="input-mail" placeholder="Add E-mail">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="input-dob" class="col-lg-2 control-label">DOB</label>
+
+        <div class="col-lg-5">
+            <input name="dob" type="date" value="{{user.dob}}" class="form-control" id="input-dob" placeholder="Add DOB">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="input-city" class="col-lg-2 control-label">City</label>
+
+        <div class="col-lg-5">
+            <input name="city" type="text" value="{{user.city}}" class="form-control" id="input-dob" placeholder="Add City">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="input-university" class="col-lg-2 control-label">University</label>
+
+        <div class="col-lg-5">
+            <input name="university" type="text" value="{{user.university}}" class="form-control" id="input-university" placeholder="Add University">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="input-direction" class="col-lg-2 control-label">Direction</label>
+
+        <div class="col-lg-5">
+            <input name="direction" type="text" value="{{user.direction}}" class="form-control" id="input-direction" placeholder="Add Direction">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="input-course" class="col-lg-2 control-label">Course</label>
+
+        <div class="col-lg-5">
+            <input name="course" type="text" value="{{user.course}}" class="form-control" id="input-course" placeholder="Add Course">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="input-specialty" class="col-lg-2 control-label">Specialty</label>
+
+        <div class="col-lg-5">
+            <input name="specialty" type="text" value="{{user.specialty}}" class="form-control" id="input-specialty" placeholder="Add Specialty">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="input-skills" class="col-lg-2 control-label">Skills</label>
+
+        <div class="col-lg-5">
+            <input name="skills" type="text" value="{{user.skills}}" class="form-control" id="input-skills" placeholder="Add Skills separated by commas">
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-lg-offset-2 col-lg-10">
+            <button type="submit" class="btn btn-success" data-loading-text="Sending...">Update</button>
+        </div>
+    </div>
+</form>
+
+<div class="container">
+    <div class="alert error" role="alert"></div>
+</div>
+
+<div class="panel panel-default">
+    <div class="panel-body">
+        Change Password
+    </div>
+    <div class="panel-footer">
+        <form class="form-horizontal login-form" name="password-form">
+            <div class="form-group">
+                <label for="input-password" class="col-lg-2 control-label">Password</label>
+
+                <div class="col-lg-5">
+                    <input name="password" type="password" value="" class="form-control" id="input-password" placeholder="Add Password">
+                </div>
+              </div>
+            <div class="form-group">
+                <label for="input-confirm" class="col-lg-2 control-label">Confirm Password</label>
+
+                <div class="col-lg-5">
+                    <input name="confirm" type="password" value="" class="form-control" id="input-password" placeholder="Add Confirm Password">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-lg-offset-2 col-lg-10">
+                    <button type="submit" class="btn btn-default" data-loading-text="Sending...">Change Password</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

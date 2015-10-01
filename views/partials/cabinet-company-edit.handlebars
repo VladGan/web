@@ -1,0 +1,79 @@
+<form class="form-horizontal login-form" name="edit-form">
+    <div class="form-group">
+        <label for="input-img" class="col-lg-2 control-label">Photo</label>
+
+        <div class="col-lg-5">
+            <input name="img" type="file" id="img" multiple="multiple" id="input-photo">
+            <img src="{{company.img}}" id="img-pic">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="input-companyName" class="col-lg-2 control-label">Company Name</label>
+
+        <div class="col-lg-5">
+            <input name="companyName" type="text" value="{{company.companyName}}" class="form-control" id="input-username" placeholder="Add Company Name">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="input-city" class="col-lg-2 control-label">City</label>
+
+        <div class="col-lg-5">
+            <input name="city" type="text" value="{{company.city}}" class="form-control" id="input-city" placeholder="Add City">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="input-contacts" class="col-lg-2 control-label">Contacts</label>
+
+        <div class="col-lg-5">
+            <input name="contacts" type="text" value="{{company.contacts}}" class="form-control" id="input-university" placeholder="Add Contacts">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="input-about" class="col-lg-2 control-label">About</label>
+
+        <div class="col-lg-5">
+            <input name="about" type="text" value="{{company.about}}" class="form-control" id="input-about" placeholder="Add About">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="col-lg-offset-2 col-lg-10">
+            <button type="submit" class="btn btn-success" data-loading-text="Sending...">Update</button>
+        </div>
+    </div>
+</form>
+
+<div class="container">
+    <div class="alert error" role="alert"></div>
+</div>
+
+<div class="panel panel-default">
+    <div class="panel-body">
+        Change Password
+    </div>
+    <div class="panel-footer">
+        <form class="form-horizontal login-form" name="password-form">
+            <div class="form-group">
+                <label for="input-password" class="col-lg-2 control-label">Password</label>
+
+                <div class="col-lg-5">
+                    <input name="password" type="password" value="" class="form-control" id="input-password" placeholder="Add Password">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="input-confirm" class="col-lg-2 control-label">Confirm Password</label>
+
+                <div class="col-lg-5">
+                    <input name="confirm" type="password" value="" class="form-control" id="input-password" placeholder="Add Confirm Password">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-lg-offset-2 col-lg-10">
+                    <button type="submit" class="btn btn-default" data-loading-text="Sending...">Change Password</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

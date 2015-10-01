@@ -1,0 +1,21 @@
+<div class="container">
+    <div class="container">
+        <div class="page-header">
+            <h1>{{post.title}}</h1>
+            <h5>{{post.place}}</h5>
+            <h5>Created by: <a href="company-page?id={{post.postAuthor}}">{{post.companyName}}</a></h5>
+        </div>
+
+        <div class="col-lg-7">
+            <p>{{{post.text}}}</p>
+            <h5>{{#date post.date}}{{/date}}</h5>
+        </div>
+
+        {{#if user}}
+            {{#isUser post user.id open test}}
+            {{/isUser}}
+        {{/if}}
+    </div>
+</div>
+
+<script src="/javascripts/post-respond.js"></script>

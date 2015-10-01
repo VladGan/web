@@ -1,0 +1,78 @@
+<div class="container">
+    <div class="container">
+        <div class="page-header">
+            <h1>{{curuser.username}}</h1>
+            <h5>Status {{status}}</h5>
+        </div>
+
+        <img src="{{curuser.img}}" class="page-avatar">
+        <h4>{{curuser.firtsname}} {{curuser.lastname}}</h4>
+        <h5>City: {{curuser.city}}</h5>
+        <h5>University: {{curuser.university}}</h5>
+        <h5>Direction: {{curuser.direction}}</h5>
+        <h5>Course: {{curuser.course}} </h5>
+
+        <h5>Specialty: {{curuser.specialty}}</h5>
+        <h5>Skills: {{curuser.skills}}</h5>
+
+        <a href="mailto:{{curuser.mail}}">{{curuser.mail}}</a>
+        <br>
+        <a href = "/create-resume?id={{curuser._id}}">Get resume</a>
+    </div>
+
+
+    <h5>Skills: {{curuser.work_experience.jobTitle}}</h5>
+    <h5>Company: {{curuser.work_experience.company}}</h5>
+    <h5>Description: {{curuser.work_experience.description}}</h5>
+    <h5>Start: {{#date curuser.work_experience.workingTime.start}}{{/date}}</h5>
+
+    <div class="page-header">
+        <h5>Open Question</h5>
+    </div>
+
+    {{#each opens}}
+        <div>
+            <h5>Question: {{this.question}}</h5>
+            <h5>Answer: <i>{{this.answer}}</i></h5>
+            <h5>User: {{this.userRespondAnswer}}
+
+                {{#if this.userCorrect}}
+                    <i class = "glyphicon glyphicon-ok green-icon"></i>
+                {{else}}
+                    <i class = "glyphicon glyphicon-remove red-icon"></i>
+                {{/if}}
+            </h5>
+        </div>
+    {{/each}}
+
+    <div class="page-header">
+        <h5>Test Question</h5>
+    </div>
+
+    {{#each tests}}
+        <div>
+            <h5>Question: {{this.question}}</h5>
+
+            <h5>Variant:</h5>
+
+            <ol>
+                {{#each this.variant}}
+                    <li>{{this}}<br> </li>
+                {{/each}}
+            </ol>
+
+            <h5>Answer: <i>{{this.answer}}</i></h5>
+            <h5> User: {{this.userRespondAnswer}}
+
+                {{#if this.userCorrect}}
+                    <i class = "glyphicon glyphicon-ok green-icon"></i>
+                {{else}}
+                    <i class = "glyphicon glyphicon-remove red-icon"></i>
+                {{/if}}
+
+
+            </h5>
+        </div>
+    {{/each}}
+
+</div>
